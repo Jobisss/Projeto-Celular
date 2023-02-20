@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 300vh;
+    background-color: rgb(99, 99, 135);
+    display: flex;
+    justify-content: center;
+    /* display e position */
+}
+
+:root{
+    --fundo : rgb(99, 99, 135);
+    --base : rgb(25, 25, 34);
+    --tela : rgb(204, 204, 248);
+    --botao : rgb(148, 148, 193);
+
+    --cor-1 : rgb(171, 20, 20);
+    --cor-2 : rgb(139, 132, 9);
+    --cor-3 : rgb(31, 89, 10);
+    --cor-4 : rgb(12, 90, 100);
+    --cor-5 : rgb(15, 17, 60);
+    --cor-6 : rgb(53, 7, 49);
+}
+
+.base{
+    position: relative;
+    top: 10vh;
+    width: 350px;
+    height: 700px;
+    border-radius: 50px;
+    background-color: var(--base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela{
+    width: 320px;
+    height: 530px;
+    background-color: var(--tela);
+  
+}
+
+.buraco{
+    position: absolute;
+    width: 90px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: var(--tela);
+    top: 40px;
+}
+
+.fone{
+    position: relative;
+    right: 30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: var(--tela);
+}
+
+.botao{
+    bottom: 15px;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: var(--botao);
+    cursor: pointer;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+
+}
+
+.plus{
+    position: absolute;
+    width: 7px;
+    height: 40px;
+    background-color: var(--base);
+    left: -7px; top: 150px;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.less{
+    position: absolute;
+    width: 7px;
+    height: 40px;
+    background-color: var(--base);
+    left: -7px; top: 200px;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+    
+}
+
+.less:hover{
+    transition: 2s ease;
+    transform: translate(7px);
+}
+.plus:hover{
+    transition: 2s ease;
+    transform: translate(7px);
+}
+
+
+.turn{
+    position: absolute;
+    width: 7px;
+    height: 60px;
+    background-color: var(--base);
+    right: -7px; top: 160px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.turn:hover{
+    transition: 2s ease;
+    transform: translate(-7px);
+}
+
+/* Agora é só os apss */
+
+.apps{
+    display: flex;
+    margin-top: 10px;
+    height: 60px;
+    width: 100;
+    margin: 20px 0px;
+    justify-content: space-evenly;
+    
+    
+}
+
+.app{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    transition: 0.5s step-start;
+    overflow:hidden;
+    
+} 
+
+.app:hover{
+    transform: scale(1.1);
+    filter: saturate(3) drop-shadow(1px 1px 6px black);
+   
+    
+
+}
+
+.type-1{
+    background-color: var(--cor-1);
+}
+.type-2{
+    background-color: var(--cor-2);
+}
+.type-3{
+    background-color: var(--cor-3);
+}
+.type-4{
+    background-color: var(--cor-4);
+}
+.type-5{
+    background-color: var(--cor-5);
+}
+.type-6{
+    background-color: var(--cor-6);
+}
